@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <Title>University page</Title>
+</head>
+<body>
+    <header>
+        <div class="headerBackground">
+            <div class="container-fluid text-center headerHeight mb-4">
+                <img class="mt-2 logo" src="images/logo1.png" alt="Logo"><br>
+                <h3 ><b>Tesla University</b></h3>
+                <h6 class="whiteText ">A building with four walls and tomorrow inside</h6>
+            </div>
+            <div class="container-fluid mt-3">
+                <div class="row m-3">
+                    <div class="container-fluid col-md-8 d-none d-sm-block text-center float-left headerComponent">
+                        <h6 class="heading"><b> What makes us Different</b></h6>
+                        <hr>
+                        <div class="container detailsBackground mb-4" >
+                            <img class="float-left" src="images/skill_1.png">
+                            <p class="float-right mt-3 mr-2" >
+                                <b>24/7 assistance of the teachers</b>
+                                <br> Faculty is extremely caring and<br> 
+                                hardworking. Children are encouraged to<br> 
+                                “construct’ their own knowledge.
+                            </p>
+                        </div>
+                        <div class="container detailsBackground mb-4" >
+                            <img class="float-left" src="images/skill_2.png">
+                            <p class="float-right mt-4 mr-4" >
+                                <b>Dedicated to excellence</b>
+                                <br> we ensure that our students
+                                <br>experience world-class learning
+                            </p>
+                            
+                        </div>
+                        <div class="container detailsBackground">
+                            <img class="float-left" src="images/skill_3.png">
+                            <p class="float-right mt-4 mr-4">
+                                <b>Believe in active learning</b>
+                                <br>The curriculum is based on the
+                                <br>belief that children learn best
+                                <br>through hands-on experiences.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-fluid col-md-4 col-sm-4 text-center float-right headerComponent">
+                        <h6 class="heading"><b> Register for Demo class</b></h6>
+                        <hr>
+                        <div class="offer">Apply for demo class now and get 20% Off on any course.</div>
+                        <!-- form to take inputs to register for demo class -->
+                        <form class="form" onsubmit="return onSubmit()" action="#">
+                            <div class="form-group">
+                                <label class="float-left" for="name">Name<span class="required">*</span></label>
+                                <input class="form-control" type="text" name="name" id="name">
+                                <p id="nameError"> </p>
+                            </div>
+                            <div class="form-group">
+                                <label class="float-left" for="email">Email<span class="required">*</span></label>
+                                <input class="form-control email" type="text" name="email" id="email">
+                                <p id="emailError"> </p>
+                            </div>
+                            <div class="form-group">
+                                <label class="float-left" for="phoneNumber">Phone Number<span class="required">*</span></label>
+                                <input class="form-control" type="text" name="phoneNumber"  id="phoneNumber">
+                                <p id="numberError"> </p>
+                            </div>
+                            <div class="form-group">
+                                <label class="float-left" for="city">City<span class="required">*</span></label>
+                                <input class="form-control" type="text" name="city" id="city">
+                                <p id="cityError"> </p>
+                            </div>
+                            <div class="form-group mb-4">
+                                <p id="error"></p>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control btn btn-warning" type="submit" value="Avail Offer Now">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- section whish shows the feedback of the students -->
+    <div class="container text-center p-3 mb-3">
+            <h4 class="heading">What our students are saying about us</h4><hr>
+            <div class="row reviewSection">
+                <div class="card col-md-4">
+                    <img class="card-img-top " src="images/student1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Akshat Jain</h5>
+                        <p class="card-text"><i>"Course syllabus was very versed and focused on the soft skills that are actually required in the market rather than bookish knowledge."</i></p>
+                    </div>
+                </div>
+                <div class="card col-md-4">
+                    <img class="card-img-top " src="images/student2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Shubham Soni</h5>
+                        <p class="card-text"><i>"Through the curriculum, I gained the experience and knowledge of being part of a team-based program."</i></p>
+                    </div>
+                </div>
+                <div class="card col-md-4">
+                    <img class="card-img-top " src="images/student3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Raghav Nagpal</h5>
+                        <p class="card-text"><i>"They’ve made us well-rounded and ready for the marketplace."</i></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="container-fluid text-center mb-1 campusBackground">
+        <h4 class="heading">Campus</h4>
+        <hr>
+        <p class="mb-3 whiteText">Our campus is regarded as one of the best campuses among private 
+                universities in India. Similarly, infrastructure is one of the biggest and best in 
+                the world. The central library is one of the major attractions of our campus. The 
+                library has lakhs of books in various subjects, and it helps students to clarify 
+                their subject related doubts. It has labs for all the required courses that impart 
+                practical knowledge to students. We have a separate division or building for research activities.</p>
+        <img class="d-none d-sm-block mb-4 headerComponent"  src="images/uni.jpg" alt="">
+    </div>
+    <div class="container-fluid text-center">
+        <h3 class="heading" >FACULTY</h3>
+        <hr>
+        <div class="row text-center" >
+            <div class="card col-md-4 faculty">
+                <img class="card-img-top rounded-circle mt-1" src="images/Prof2.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Dr. Rakesh Mingh</h4>
+                  <p class="card-text"><b>HOD<br>Computer Networks and<br>Cyber Security</b></p>
+                </div>
+            </div>
+            <div class="card col-md-4 faculty">
+                <img class="card-img-top rounded-circle mt-1" src="images/Prof3.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Umesh Mittal</h4>
+                  <p class="card-text"><b>HOD<br>Theory of Computation</b></p>
+                </div>
+            </div>
+            <div class="card col-md-4 faculty">
+                <img class="card-img-top rounded-circle mt-1" src="images/Prof1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Arun Chopra</h4>
+                  <p class="card-text"><b>Assistant Professor<br>Machine Learning</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- carousel to display all the subjects -->
+    <div class="container-fluid text-center courses">
+        <h4 class="mt-2 heading">Courses Offered</h4>
+        <hr>
+        <div class="row">
+            <div class="col-md-12 p-1" >
+                <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="single-box text-center">
+                                        <div class="img-area" ><img  src="images/ML.jpg" alt=""></div>
+                                        <div class="img-text"><h6>Machine learning</h6>
+                                            <p>Duration: 6 months<br>Fees: 27,000 Rs</p>
+                                            <input class="btn btn-sm btn-primary" type="button" value="Register">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="single-box text-center">
+                                        <div class="img-area"><img  src="images/CV.jpg" alt=""></div>
+                                        <div class="img-text"><h6>Computer vision</h6>
+                                            <p>Duration: 6 months<br>Fees: 27,000 Rs</p>
+                                            <input class="btn btn-sm btn-primary" type="button" value="Register">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="single-box text-center">
+                                        <div class="img-area"><img  src="images/AI.jpg" alt=""></div>
+                                        <div class="img-text"><h6>Artificial intelligence</h6>
+                                            <p >Duration: 6 months<br>Fees: 28,000 Rs</p>
+                                            <input class="btn btn-sm btn-primary" type="button" value="Register">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="single-box text-center">
+                                        <div class="img-area"><img  src="images/PG.jpeg" alt=""></div>
+                                        <div class="img-text"><h6>Photography</h6>
+                                            <p>Duration: 5 months<br>Fees: 21,000 Rs</p>
+                                            <input class="btn btn-sm btn-primary" type="button" value="Register">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="single-box text-center">
+                                        <div class="img-area"><img  src="images/MUSIC.jpg" alt=""></div>
+                                        <div class="img-text"><h6>Music theory</h6>
+                                            <p>Duration: 12 months<br>Fees: 29,000 Rs</p>
+                                            <input class="btn btn-sm btn-primary" type="button" value="Register" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="single-box text-center">
+                                        <div class="img-area"><img  src="images/softSkills.jpg" alt=""></div>
+                                        <div class="img-text"><h6>Soft skills</h6>
+                                            <p >Duration: 4 months<br>Fees: 11,000 Rs</p>
+                                            <input class="btn btn-sm btn-primary" type="button" value="Register">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="single-box text-center">
+                                        <div class="img-area"><img  src="images/java.jpg" alt=""></div>
+                                        <div class="img-text"><h6>Java programing language</h6>
+                                            <p >Duration: 5 months<br>Fees: 11,000 Rs</p>
+                                            <input class="btn btn-sm btn-primary" type="button" value="Register">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="single-box text-center">
+                                        <div class="img-area"><img  src="images/c++2.png" alt=""></div>
+                                        <div class="img-text"><h6>C++ programing language</h6>
+                                            <p >Duration: 4 months<br>Fees: 18,000 Rs</p>
+                                            <input class="btn btn-sm btn-primary" type="button" value="Register">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="single-box text-center">
+                                        <div class="img-area"><img  src="images/python.jpg" alt=""></div>
+                                        <div class="img-text"><h6>Python programing language</h6>
+                                            <p>Duration: 4 months<br>Fees: 15,000 Rs</p>
+                                            <input class="btn btn-sm btn-primary" type="button" value="Register">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center mt-2">
+        <h4 class="heading">Companies hiring from our college</h4>
+        <hr>
+        <div class="row">
+            <div class="col-md-4 mt-3 mb-3 p-4"><img src="images/google.png" alt="Google"></div>
+            <div class="col-md-4 mt-3 mb-3 p-4"><img src="images/apple.jpg" alt="Amazon"></div>
+            <div class="col-md-4 mt-3 mb-3 p-4"><img src="images/apple-logo.png" alt="Apple"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mt-3 mb-3 p-4"><img src="images/netflix.png" alt="Netflix"></div>
+            <div class="col-md-4 mt-3 mb-3 p-4"><img src="images/facebook.jpg" alt="Facebook"></div>
+            <div class="col-md-4 mt-3 mb-3 p-4"><img src="images/tcs.jpg" alt="Tcs"></div>
+        </div>
+    </div>
+</body>
+</html>

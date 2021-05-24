@@ -1,0 +1,168 @@
+.headerBackground{
+    min-height: 38rem;
+    width: 100%;
+    background:rgba(148, 149, 236, 0.568);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* background-attachment: fixed; */
+}
+header{
+    min-height: 38rem;
+    width: 100%;
+    background-image:url("images/uni.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.headerHeight{
+    height: 5rem;
+}
+.headerComponent{
+    box-shadow: 4px 3px 10px 1px #000000a6; 
+    transform: scale(0.9);
+    background-color:rgba(0, 0, 0, 0.623);
+    border:solid black 1px;
+    border-radius: 10px;
+}
+.offer{
+    font-size: small;
+    font-family:cursive;
+    color: white;
+    animation-name: offers;
+    
+    animation-direction: alternate;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes offers{
+    0%{color: white;}
+    50%{
+        color:rgb(255, 196, 0);
+    }
+    100%{
+        color: white;
+    }
+}
+label{
+    color: rgba(255, 255, 255, 0.856);
+}
+.required{
+    color: rgb(253, 93, 93);
+}
+.img-text{
+    margin-top: 0.5rem;
+    color: white;
+}
+.whiteText{
+    color: white;
+}
+.emptyFieldError{
+    color: rgb(255, 153, 0);
+    font-size: 0.66rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 0;
+}
+#nameError{
+    color: yellow;
+    font-size: 0.66rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 0.6rem;
+}
+#emailError{
+    color: yellow;
+    font-size: 0.66rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 0.6rem;
+}
+#numberError{
+    color: yellow;
+    font-size: 0.66rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 0.6rem;
+}
+#cityError{
+    color: yellow;
+    font-size: 0.66rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 0.9rem;
+}
+#error{
+    color: yellow;
+    font-size: 0.66rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    height: 0.rem;
+}
+.courses{
+    background:radial-gradient(rgb(112, 112, 112),rgb(83, 83, 83));
+    border: solid black 3px;
+}
+.single-box{
+    margin-top: 0.5rem;
+    height: 21rem;
+    padding: 0.5rem;
+    background: radial-gradient(rgb(65, 65, 65),transparent,transparent);
+}
+.faculty{
+    background: none;
+    border: none;
+}
+.faculty img{
+    border: solid rgb(117, 117, 117) 4px;
+    transform: scale(0.8);
+}
+.logo{
+    height: 2rem;
+}
+.heading{
+    padding-top: 1rem;
+    color: rgb(228, 186, 1);
+}
+hr{
+    width: 10rem; 
+    background: rgb(80, 205, 255, 0.925);;
+}
+.card-text{
+    font-size: 0.8rem;
+}
+.carousel-inner img{
+    border: solid white 3px;
+    width: 13.5rem;
+}
+.campusBackground{
+    background:gray; 
+    border: solid rgba(219, 219, 219, 0.514) 20px;
+}
+.campusBackground img{
+    margin-left: 10%; 
+    width: 80%; 
+    border: solid white 10px;
+}
+.card-img-top{
+    width: 80%; 
+    margin-left:10%;
+    margin-top:1rem;
+}
+.reviewSection{
+    box-shadow: 4px 3px 10px 1px #00000086;
+    background-color:rgba(0, 0, 0, 0.075);
+    border: black 1px;
+    border-radius: 10px;
+}
+
+.detailsBackground{
+    background: linear-gradient(to right,rgba(255, 255, 255, 0.5),transparent);
+    margin-bottom: 15px; 
+    height: 8rem; 
+    border-radius: 100px;
+}
+.headerComponent p{
+    color: white;
+    font-size: 0.85rem;
+}
+.headerComponent img{
+    height: 8rem;
+    border-radius: 100px; 
+    opacity: 0.7;
+}
